@@ -36,14 +36,6 @@ ul {
     align-items: center;
 
     margin: 2em;
-
-    opacity: 0.0;
-    transition: opacity 1s;
-}
-
-
-.info.inview {
-    opacity: 1;
 }
 
 .img__img {
