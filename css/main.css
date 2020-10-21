@@ -38,16 +38,15 @@ ul {
     margin: 2em;
 }
 
+.info__p {
+    line-height: 1.5;
+}
 .img__img {
     object-fit: cover;
     width: 100%;
     height: 20em;
 
     border-radius: .3em;
-}
-
-.text__h2 {
-    text-align: center;
 }
 
 @media (min-width: 300px) {
@@ -77,6 +76,9 @@ ul {
     .reverse {
         flex-direction: row-reverse;
     }
+    .text__h2 {
+        text-align: center;
+    }
     .info__p {
         max-width: 45ch;
         margin: 1em;
@@ -98,4 +100,16 @@ ul {
         margin: 0em auto 0em auto;
         max-width: 45em;
     }
+}
+
+
+
+
+.item {
+    opacity: 0;
+    transform: opacity 2s;
+}
+  
+.item.show {
+    opacity: 1;
 }

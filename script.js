@@ -17,3 +17,20 @@ window.addEventListener('scroll', function(e) {
         }
     }
 });
+
+
+const articles = document.querySelectorAll('.item');
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+articles.forEach(article => {
+  observer.observe(article);
+});
