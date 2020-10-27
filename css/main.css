@@ -8,8 +8,7 @@ section {
     height: 100%;
 }
 
-ul {
-    list-style-type: none;
+h1 {
     padding: 0;
     margin: 0;
     display: grid;
@@ -38,8 +37,17 @@ ul {
     margin: 2em;
 }
 
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    background-color: rgb(251 251 251);
+    color: grey;
+}
 .info__p {
     line-height: 1.5;
+    text-align: left;
 }
 .img__img {
     object-fit: cover;
@@ -50,10 +58,6 @@ ul {
 }
 
 @media (min-width: 300px) {
-    .title {
-        font-size: 3em;
-    }
-
     .info__text {
         margin-top: 1em;
         margin-bottom: 10em;
@@ -63,7 +67,7 @@ ul {
 
 @media (min-width: 600px) {
     .title {
-        font-size: 5em;
+        font-size: 3.5em;
     }
 
     .info {
